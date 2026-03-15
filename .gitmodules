@@ -1,0 +1,7 @@
+[submodule "libs/imgui-node-editor"]
+	path = libs/imgui-node-editor
+	url = https://github.com/htamas1210/imgui-node-editor.git
+	branch = develop
+[submodule "libs/SakuraCore"]
+	path = libs/SakuraCore
+	url = http://rpiserver.ddns.net:3000/htamas1210/SakuraCore.git
