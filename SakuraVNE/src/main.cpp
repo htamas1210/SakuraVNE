@@ -1,3 +1,4 @@
+#include "AppLayer.h"
 #include "Application.h"
 
 int main(int argc, char *argv[]) {
@@ -8,7 +9,7 @@ int main(int argc, char *argv[]) {
     appData.windowdata.height = 720;
 
     Application app(appData);
-    // app.PushLayer<AppLayer>();
+    app.PushLayer<AppLayer>();
     app.Run();
 
     return 0;

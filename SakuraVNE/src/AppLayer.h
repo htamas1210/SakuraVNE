@@ -1,8 +1,10 @@
 #include "Layer.h"
 
-class AppLayer : SakuraVNE::Layer {
+class AppLayer : public SakuraVNE::Layer {
+public:
     AppLayer();
-    virtual ~AppLayer();
+    virtual ~AppLayer() = default;
+    virtual void OnImGuiRender() override;
 
 private:
     // bool OnMouseButtonPressed(Core::MouseButtonPressedEvent &event);
