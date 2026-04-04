@@ -1,6 +1,7 @@
 #include "AppLayer.h"
 #include "Application.h"
 #include "Layer.h"
+#include "TestLayer.h"
 #include "imgui.h"
 
 AppLayer::AppLayer() : Layer("AppLayer", true) {}
@@ -14,6 +15,12 @@ void AppLayer::OnImGuiRender() {
 
     if (ImGui::Button("Quit")) {
         Application::Get().SetRunningState(false);
+    }
+    ImGui::End();
+
+    ImGui::Begin("Layer Transition");
+    if (ImGui::Button("Transition")) {
+        TransitionTo<TestLayer>();
     }
     ImGui::End();
 }
