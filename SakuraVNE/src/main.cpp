@@ -1,5 +1,6 @@
 #include "AppLayer.h"
 #include "Application.h"
+#include "Overlay.h"
 
 int main(int argc, char *argv[]) {
     AppData appData;
@@ -10,6 +11,7 @@ int main(int argc, char *argv[]) {
 
     Application app(appData);
     app.PushLayer<AppLayer>();
+    app.PushOverlay<Overlay>();
     app.Run();
 
     return 0;

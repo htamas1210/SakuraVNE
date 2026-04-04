@@ -8,7 +8,7 @@ TestLayer::TestLayer() : Layer("TestLayer", true) {}
 void TestLayer::OnImGuiRender() {
     ImGuiIO &io = ImGui::GetIO();
 
-    ImGui::Begin("Layer Transition");
+    ImGui::Begin("To AppLayer Transition");
     if (ImGui::Button("Transition")) {
         TransitionTo<AppLayer>();
     }

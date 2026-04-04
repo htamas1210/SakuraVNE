@@ -18,7 +18,7 @@ void AppLayer::OnImGuiRender() {
     }
     ImGui::End();
 
-    ImGui::Begin("Layer Transition");
+    ImGui::Begin("To TestLayer Transition");
     if (ImGui::Button("Transition")) {
         TransitionTo<TestLayer>();
     }
