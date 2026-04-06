@@ -12,11 +12,11 @@ void Overlay::OnImGuiRender() {
 
     ImGui::Begin("Overlay Transition");
     if (ImGui::Button("Overlay Transition")) {
-        auto testLayer = Application::Get().GetLayer<TestLayer>();
+        auto testLayer = SakuraVNE::Application::Get().GetLayer<TestLayer>();
         if (testLayer) {
             testLayer->TransitionTo<AppLayer>();
         } else {
-            auto appLayer = Application::Get().GetLayer<AppLayer>();
+            auto appLayer = SakuraVNE::Application::Get().GetLayer<AppLayer>();
             appLayer->TransitionTo<TestLayer>();
         }
     }
