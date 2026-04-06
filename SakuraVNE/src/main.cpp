@@ -1,6 +1,7 @@
 #include "AppLayer.h"
 #include "Application.h"
 #include "Overlay.h"
+#include "SDL3/SDL_main.h"
 
 int main(int argc, char *argv[]) {
     SakuraVNE::AppData appData;
