@@ -7,7 +7,7 @@
 int main(int argc, char *argv[]) {
     SakuraVNE::AppData appData;
     appData.name = "Sakura Visual Novel Creator";
-    appData.windowdata.windowFlags = SDL_WINDOW_RESIZABLE | SDL_WINDOW_HIGH_PIXEL_DENSITY;
+    appData.windowdata.windowFlags = (SDL_WindowFlags)(SDL_WINDOW_RESIZABLE | SDL_WINDOW_HIGH_PIXEL_DENSITY);
     appData.windowdata.title = appData.name;
     appData.windowdata.width = 1280;
     appData.windowdata.height = 720;
