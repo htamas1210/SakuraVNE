@@ -4,4 +4,4 @@
 	branch = develop
 [submodule "libs/SakuraCore"]
 	path = libs/SakuraCore
-	url = http://rpiserver.ddns.net:3000/htamas1210/SakuraCore.git
+	url = https://spaceglitter.spacestation.hu/htamas1210/SakuraCore.git
